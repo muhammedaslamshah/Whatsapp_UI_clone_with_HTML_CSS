@@ -27,13 +27,23 @@
           <label for="calls">Calls</label>
           <div class="underline"></div>
         </div>
+
+        <div class="quickBtn">
+          <div class="btn message"><ion-icon name="chatbubble"></ion-icon></div>
+          <div class="btn camers">
+            <div class="pencil"><ion-icon name="pencil-sharp"></ion-icon></div>
+            <ion-icon name="camera"></ion-icon>
+        </div>
+          <div class="btn call"><ion-icon name="call"></ion-icon></div>
+        </div>
+
         <div class="content">
           <div class="box chats">
             <div class="data">
               <div class="chatlist">
                 <!-- 1st Profile -->
 
-                <div class="block unread">
+                <div class="block unread open">
                   <div class="imgbx">
                     <img src="img1.jpg" alt="" />
                   </div>
@@ -45,7 +55,7 @@
                     </div>
                     <div class="message_p">
                       <!-- it's messages displaing at home screen -->
-                      <p>How to make whatsapp clone using html & css</p>
+                      <p>Bro can you help me! so i want to make a WhatsApp clone project with HTML & CSS.</p>
 
                       <b>1</b
                       ><!--  it's used to find notifications with count number  -->
@@ -67,7 +77,7 @@
                     </div>
                     <div class="message_p">
                       <!-- it's messages displaing at home screen -->
-                      <p>How to make whatsapp clone using html & css</p>
+                      <p>Hey are Busy now 😡😡😡</p>
 
                       <!-- it's blank so they don't have an notifications with count number  -->
                     </div>
@@ -88,7 +98,7 @@
                     </div>
                     <div class="message_p">
                       <!-- it's messages displaing at home screen -->
-                      <p>How to make whatsapp clone using html & css</p>
+                      <p>Thank you 🥰</p>
 
                       <b>1</b
                       ><!--  it's used to find notifications with count number  -->
@@ -341,29 +351,63 @@
                     </div>
                     <div class="message_p incoming">
                       <!-- it's messages displaing at home screen -->
-                      <p><ion-icon name="arrow-down"></ion-icon> Yesterday, 18:2</p>
+                      <p>
+                        <ion-icon name="arrow-down"></ion-icon> Yesterday, 18:2
+                      </p>
                     </div>
                   </div>
-                  <ion-icon name="call"></ion-icon>
+                  <ion-icon name="call" class="call"></ion-icon>
                 </div>
                 <div class="block">
-                    <div class="imgbx">
-                      <img src="img1.jpg" alt="" />
-                    </div>
-                    <div class="details">
-                      <div class="listHead">
-                        <!-- name of the profile at that section -->
-                        <h4>Alex Smith</h4>
-                      </div>
-                      <div class="message_p outgoing">
-                        <!-- it's messages displaing at home screen -->
-                        <p><ion-icon name="arrow-up"></ion-icon> Yesterday, 17:42</p>
-                      </div>
-                    </div>
-                    <ion-icon name="call"></ion-icon>
+                  <div class="imgbx">
+                    <img src="img1.jpg" alt="" />
                   </div>
+                  <div class="details">
+                    <div class="listHead">
+                      <!-- name of the profile at that section -->
+                      <h4>Alex Smith</h4>
+                    </div>
+                    <div class="message_p outgoing">
+                      <!-- it's messages displaing at home screen -->
+                      <p>
+                        <ion-icon name="arrow-up"></ion-icon> Yesterday, 17:42
+                      </p>
+                    </div>
+                  </div>
+                  <ion-icon name="call" class="call"></ion-icon>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatBox">
+        <div class="chat_header">
+          <div class="imgcontent">
+            <ion-icon name="arrow-back-sharp" class="back"></ion-icon>
+            <div class="imgBx">
+              <img src="img1.jpg" alt="" class="dm-chat">
+            </div>
+            <h3>Alex Smith <br><span>Online</span> </h3>
+          </div>
+          <div class="actionBtns">
+            <ion-icon name="videocam-sharp"></ion-icon>
+            <ion-icon name="call-sharp"></ion-icon>
+            <ion-icon name="ellipsis-vertical-sharp"></ion-icon>
+          </div>
+        </div>
+        <div class="messageBox">
+          <div class="message">
+            Bro can you help me! so i want to make a WhatsApp clone project with HTML & CSS. <br><span class="time">10:10</span>
+          </div>
+          <div class="messageInput">
+            <div class="input">
+              <ion-icon name="happy-outline"></ion-icon>
+              <input type="text" name="" id="" placeholder="Message">
+              <ion-icon name="attach-outline" class="deg45"></ion-icon>
+              <ion-icon name="camera"></ion-icon>
+            </div>
+            <div class="mic"><ion-icon name="mic"></ion-icon></div>
           </div>
         </div>
       </div>
@@ -376,5 +420,18 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    
+    <script>
+      let back = document.querySelector('.back');
+      let chatBox = document.querySelector('.chatBox');
+      let open = document.querySelector('.open')
+
+      back.onclick = ()=>{
+        chatBox.classList.add('hide');
+      }
+      open.onclick = () =>{
+        chatBox.classList.remove('hide');
+      }
+    </script>
   </body>
 </html>
