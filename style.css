@@ -112,7 +112,7 @@ header .action a {
 
 /* buttons Section End */
 
-/* content Section started */
+/* Content Section Started */
 .content{
     position: relative;
     width: calc(340px * 3);
@@ -138,7 +138,7 @@ header .action a {
     width: 100%;
     height: 510px;
 }
-/* chatlist Section */
+/* Chatlist Section Started*/
 .chatlist{
     position: relative;
     height: 100%;
@@ -163,6 +163,7 @@ header .action a {
     overflow: hidden;
     border-radius: 50%;
 }
+/* chat profile images  */
 .chatlist .block .imgbx img{
     position: relative;
     top: 0;
@@ -171,6 +172,7 @@ header .action a {
     height: 100%;
     object-fit: cover;
 }
+/* chat details */
 .chatlist .block .details{
     position: relative;
     width: 100%;
@@ -179,12 +181,14 @@ header .action a {
     display: flex;
     justify-content: space-between;
 }
+/* profile Names */
 .chatlist .block .details .listHead{
     font-size: 1em;
     font-weight: 600;
     width: 100%;
     color: #111;
 }
+/* read chat messages time showing section */
 .chatlist .block .details .listHead .time{
     font-size: 0.7em;
     color: #555;
@@ -194,6 +198,7 @@ header .action a {
     justify-content: space-between;
     align-items: center;
 }
+/* read chat messages section */
 .chatlist .block .details p{
     color: #555;
     display: -webkit-box;
@@ -203,13 +208,16 @@ header .action a {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
+/* unread message notifications time showing section*/
 .chatlist .block.unread .details .listHead .time{
     color: #06d755;
 }
+/* unread messages section */
 .chatlist .block.unread .details p{
     color: #111;
     font-weight: 600;
 }
+/* Message Count Section Started */
 .message_p b{
     background: #06d755;
     color: #fff;
@@ -221,4 +229,64 @@ header .action a {
     align-items: center;
     font-size: 0.75em;
 
+}
+/* Message Count Section End */
+
+/* Website Scrolling Controlls Section Started */
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #bbb;
+}
+/* Website Scrolling Controlls Section End */
+
+/* Chatlist Section End */
+
+/* Content Section End */
+
+/* ======================================================= */
+
+/* Status Section Start */
+.status .plus{
+    position: absolute;
+    top: 38px;
+    left: 40px;
+    width: 25px;
+    height: 25px;
+    background: #008069;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.box label{
+    padding: 0 15px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.85em;
+}
+.unseen .imgbx{
+    box-shadow: 0 0 0 2px #fff,
+    0 0 0 4px #008069;
+}
+.seen .imgbx{
+    box-shadow: 0 0 0 2px #fff,
+    0 0 0 4px #bbb;
+}
+.green{
+    background: #008069;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+    rotate: -45deg;
 }
